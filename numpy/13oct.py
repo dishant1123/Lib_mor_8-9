@@ -76,7 +76,7 @@ print("mod :\n",a%b)
 print("floor division :\n",a//b)
 """
 # matrix multiplication : matmul , dot , @ 
-
+"""
 a= np.array([
     [11,12],
     [14,15],
@@ -92,3 +92,4 @@ print("dot product :\n",np.dot(a,b))
 print("matmul :\n",np.matmul(a,b))
 
 
+"""
