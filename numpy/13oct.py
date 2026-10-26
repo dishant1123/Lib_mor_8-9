@@ -2,11 +2,11 @@ import numpy  as np
 import random 
 from scipy import stats as st
 # identity  matrix : 
-"""
+
 arr = np.identity(4)
 arr =np.eye(4,dtype=int)
 print(arr)
-"""
+
 
 # transpose :
 """

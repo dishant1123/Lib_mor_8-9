@@ -3,6 +3,7 @@ import numpy  as np
 # shallow copy 
 """l1= [1,2,3,4,5,6]  # view  ----> memory  share 
 #    0 1 2 3 4 5 
+
 l2=l1 # l2 =[1,2,3,4,5,6]   l1 =[1,2,"heena",4,5,6]
 
 l2[2] = "heena"
@@ -23,8 +24,8 @@ print("l2",l2)
 """
 
 # flatten : converted any demensional array to 1-d array , same  as deep copy
-
-"""arr =np.array([
+"""
+arr =np.array([
     [1,2,3],
     [4,5,6],
     [7,8,9]

@@ -67,7 +67,7 @@ print("shape of arr2 is  : ",arr2.shape)
     [7,8,9]
 ])
 
-arr1 =np.array([1,2,3,4,5,6,7,8,9])
+arr1 =np.array([1,2,3,4,5,6,7,8,9])   # 3,3    9,
 result = arr1*arr2
 print(arr2)
 print("result is :",result)
@@ -75,13 +75,12 @@ print("result is :",result)
 """
 # ex :3
 
-"""arr1 =np.array([[11,12,13],
+arr1 =np.array([[11,12,13],
                 [5,6,7]])
 
-arr2 =np.array([1,2,3]) 
+arr2 =np.array([1,2,3])     # 2,3  3, 
 
 result = arr1 +arr2
 print(arr1.shape)
 print(arr2.shape)
 print(result)
-"""
