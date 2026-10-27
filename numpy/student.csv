@@ -1,5 +1,11 @@
-id,age,salary 
-1,21,30000
-2,20,32000
-3,19,40000
-4,18,50000
+id,name,age,department,salary
+1,heena,24,engineering,1000
+2,badal,25,engineering,2000
+3,chirag,26,IT,3000
+4,sanju,27,IT,4000
+5,sid,28,engineering,5000
+6,john,28,Sales,5000
+7,dipu,38,Sales,15
+8,alu,24,management,1000 
+9,arjun,25,management,2000
+10,rashmika,26,management,3000
