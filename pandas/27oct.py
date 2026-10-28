@@ -33,7 +33,8 @@ print(df.shape)
 
 # ex :1 create dataframe from dict
 
-"""df = pd.DataFrame({
+"""
+df = pd.DataFrame({
     "id" : [1,2,3,4,5],
     "name" : ["heena","badal","chirag","sanju","sid"], 
     "marks" : [90,89,88,99,91],
@@ -49,7 +50,8 @@ print(df)
 
 # ex :2 create dataframe from list of list
 
-"""df = pd.DataFrame([
+"""
+df = pd.DataFrame([
     [1,"heena",90,"pune"],
     [2,"badal",89,"mumbai"],
     [3,"chirag",88,"delhi"],
@@ -91,6 +93,7 @@ print(country_population)
 2. changes the  sid  salary to 90000 
 3. update  chirag name with salman . 
 
+hint  : index  ------> df['salary'][4] =90000
 """
 
 
