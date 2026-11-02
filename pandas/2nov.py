@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 #sort_index :    
 
 """df= pd.DataFrame({
@@ -59,11 +60,12 @@ upper limit  = Q3+1.5*IQR
  
 """
 
-df = pd.DataFrame({
-    'days' : [1,2,3,4,5,6,7,8,9],
-    'sales' : [20000,300,250,350,150,400,550,600,150]
-})
-print(df)
+# df = pd.DataFrame({
+#     'days' : [1,2,3,4,5,6,7,8,9],
+#     'sales' : [20000,300,250,350,150,400,550,600,150]
+# })
+# print(df)
+# 
 # outlier  detection  using  IQR  method :
 """
 Q3 = df['sales'].quantile(0.75)
@@ -91,10 +93,10 @@ plt.show()
 
 #z-score 
 
-from scipy import stats 
+"""from scipy import stats 
 
 z_score = stats.zscore(df['sales'])
 print("z score :\n",z_score)
 print("outlier :\n",df[(z_score>2.5) | (z_score<-2.5)])  # 15000
-
+"""
 # cilp ,winsorize :
