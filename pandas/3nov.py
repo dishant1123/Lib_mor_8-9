@@ -85,3 +85,16 @@ print("total count of each department :\n",total_count_Depat_wise)
 
 group_by_depat =df.groupby('Department')['Salary'].agg(['min','max','mean','count']) 
 print("min ,max ,mean ,count depart_wise :\n",group_by_depat)
+
+# tasks : 
+"""
+using sample_superstore dataset  :
+
+1. find the  total sales category wise . 
+2. findout the  top  3 sub-category highest sales. 
+3. findout the  bottom  3 sub-category lowest profit. 
+4. findout the  top 5 customer name  who earn highest profit .
+
+"""
+
+
