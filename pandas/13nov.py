@@ -1,10 +1,6 @@
 import  pandas as pd 
 import  numpy as np 
 
-
-
-import pandas as pd
-
 data = {
     'Emp_ID': [101, 102, 103, 104, 105, 106, 107, 108, 109, 110,
                111, 112, 113, 114, 115],
@@ -32,16 +28,35 @@ data = {
 
 df = pd.DataFrame(data)
 
-df['Joining_Date'] = pd.to_datetime(df['Joining_Date'])
+df['Joining_Date'] = pd.to_datetime(df['Joining_Date'],format='%d-%m-%Y')
 df['Month']=df['Joining_Date'].dt.month 
 df['Year']=df['Joining_Date'].dt.year
 df['Day']=df['Joining_Date'].dt.day
 
-print(df)
+# print(df)
 
 """
+Que :1 
 count 2022 ----> hire   ----> count  4 
 total salary -----> 170000  
-
 group  by 
 """
+# ans : 
+"""
+result = df.groupby('Year').agg(
+    total_emp =('Emp_ID','count'),
+    total_salary=('Salary','sum')
+)
+print(result)
+"""
+# using loc  print  only detalis year =2022 and  total salary. 
+
+"""
+que :2 
+how  much days employees stay  in  our company (till the date )
+"""
+# ans : 
+
+today_date =pd.Timestamp.today().normalize()  # 13-11-2026
+df['total_days'] =(today_date - df['Joining_Date']).dt.days
+print(df)
