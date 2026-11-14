@@ -58,5 +58,7 @@ how  much days employees stay  in  our company (till the date )
 # ans : 
 
 today_date =pd.Timestamp.today().normalize()  # 13-11-2026
-df['total_days'] =(today_date - df['Joining_Date']).dt.days
-print(df)
+print(today_date)
+# df['total_days'] =(today_date - df['Joining_Date']).dt.days
+# print(df)
+
