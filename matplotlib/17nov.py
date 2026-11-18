@@ -104,3 +104,4 @@ plt.ylabel("sales")
 plt.xticks(rotation=45)
 plt.title("sales vs subcategory")
 plt.show()
+
