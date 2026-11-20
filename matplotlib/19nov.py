@@ -109,3 +109,5 @@ plt.show()
 """
 
 # scatter plot  : 
+# bar chart  -----> category  ----> sales  label  -----> hint  : plt.bar_label 
+
