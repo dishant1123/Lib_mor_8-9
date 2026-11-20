@@ -4,43 +4,49 @@ import numpy as np
 
 # trend  line  : 
 
-"""
 df = pd.read_csv("pandas/sample_superstore1 copy.csv")
-
-X =np.arange(len(df))
-print(X)
-
-# linear regression  : y = m x +c 
-slope,intercept = np.polyfit(X,df['Sales'],1)
-trend = slope * X + intercept
 
 # order_date  convert in to  datetime format  : 
 
 df['Order Date']=pd.to_datetime(df['Order Date'])
-df['Month']=df['Order Date'].dt.month
+df['Month']=df['Order Date'].dt.to_period('M')
+monthly_sales =df.groupby('Month')['Sales'].sum()
+
+X =np.arange(len(monthly_sales))
+
+# linear regression  : y = m x +c 
+slope,intercept = np.polyfit(X,monthly_sales.values,1)
+trend = slope * X + intercept
 
 # graph : 
+plt.figure(figsize=(10,5))
 plt.plot(
-    df['Month'],
-    df['Sales'],
+    monthly_sales.index.astype(str),
+    monthly_sales.values,
     color='red',
     label='Sales',
-    linewidth=2
+    linewidth=2,
+    marker='o'
 )
 plt.plot(
-    df['Month'],
+    monthly_sales.index.astype(str),
+   
     trend,
     color='blue',
-    label='trend',
-    linewidth=2
+    label='trend line',
+    linewidth=2,
+    linestyle='--'
+    
 )
 plt.title(" line trend line")
 plt.xlabel("Sales")
 plt.ylabel("Month")
+plt.xticks(rotation=45)
 plt.legend()
 plt.grid()
+plt.tight_layout()
 plt.show()
-"""
+
 """
 exp_yrs  salary 
 0        25000 
@@ -51,6 +57,7 @@ exp_yrs  salary
 
 
 """
+"""
 month = [1,2,3,4,5,6,7,8,9,10,11,12]
 sales = [100,150,200,90,350,450,560,400,800,650,790,1200] 
 
@@ -59,7 +66,7 @@ x=np.arange(len(month))
 # linear regression  : y = m x +c
 slope,intercept = np.polyfit(x,sales,1)
 trend = slope * x + intercept
-
+"""
 # graph : 
 """
 plt.plot(
@@ -102,4 +109,3 @@ plt.show()
 """
 
 # scatter plot  : 
-
