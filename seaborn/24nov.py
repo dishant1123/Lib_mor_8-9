@@ -13,8 +13,8 @@ Distribution plots:
     sns.rugplot()
 
 Categorical plots:
-    sns.boxplot()
-    sns.violinplot()
+    sns.boxplot() ----> done 
+    sns.violinplot() ---> done
     sns.barplot() ----> done  
     sns.countplot() ----> done   ----> pending  : bar_label,hue 
     sns.swarmplot()
@@ -85,6 +85,7 @@ bars =sns.barplot(
 )
 plt.title("month vs sales")
 plt.show()  
+
 """
 
 # count plot  : 
