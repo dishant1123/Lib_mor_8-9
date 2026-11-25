@@ -90,13 +90,11 @@ plt.show()
 # count plot  : 
 
 df = pd.read_csv("seaborn/customer_sales.csv")
-
 sns.countplot(
     data=df,
     x='Gender',
     color="green"
-    
-    
+   
 )
 plt.title("count  plot  gender wise ")
 plt.show()
