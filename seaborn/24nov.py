@@ -17,14 +17,14 @@ Categorical plots:
     sns.violinplot() ---> done
     sns.barplot() ----> done  
     sns.countplot() ----> done   ----> pending  : bar_label,hue 
-    sns.swarmplot()
-    sns.pointplot()
+    sns.swarmplot() ----> done
+    sns.pointplot() ----> done 
 
 Regression plots:
-    sns.regplot()
+    sns.regplot()   ---> done
 
 Matrix plots:
-    sns.heatmap()
+    sns.heatmap()  ----> done 
 
 figure level charts:
 
