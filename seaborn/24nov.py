@@ -32,8 +32,8 @@ Relational plots:
     sns.relplot() → wraps scatterplot() / lineplot()
 
 Distribution plots:
-    sns.displot() → wraps histplot(), kdeplot(), ecdfplot()
-    sns.jointplot() → combines scatter + marginal histograms
+    sns.displot() → wraps histplot(), kdeplot(), ecdfplot()  ----> done 
+    sns.jointplot() → combines scatter + marginal histograms  ----> done 
     sns.pairplot() → grid of pairwise plots
 
 Categorical plots:
@@ -41,7 +41,7 @@ Categorical plots:
     sns.catplot() → wraps boxplot(), violinplot(), barplot(), countplot(), stripplot(), swarmplot()
 
 Regression plots:
-    sns.lmplot() → wraps regplot() with faceting
+    sns.lmplot() → wraps regplot() with faceting  ---> done 
 
 """
 import  pandas as pd 
